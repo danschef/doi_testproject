@@ -13,6 +13,8 @@ doi_testproject
         :target: https://doi-testproject.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
+.. image:: https://zenodo.org/badge/241432828.svg
+   :target: https://zenodo.org/badge/latestdoi/241432828
 
 
 
