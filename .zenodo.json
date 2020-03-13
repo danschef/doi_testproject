@@ -1,0 +1,28 @@
+{
+    "title": "DOI Test project",
+    "description": "A simple project containing dummy code to test the connection of GitHub repositories with Zenodo.",
+    "license": "GPL-3.0+",
+    "upload_type": "software",
+    "keywords": [
+        "DOI",
+        "Zenodo",
+        "Testing"
+    ],
+    "creators": [
+        {
+            "name": "Scheffler, Daniel",
+            "affiliation": "Helmholtz Centre Potsdam German Research Centre for Geosciences GFZ, Section 1.4 - Remote Sensing and Geoinformatics",
+            "orcid": "0000-0003-4106-8928"
+        }
+    ],
+    "related_identifiers": [
+        {
+            "scheme": "url",
+            "identifier": "https://gitext.gfz-potsdam.de/danschef/doi_testproject",
+        },
+        {
+            "scheme": "doi",
+            "identifier": "10.5281/zenodo.3674046",
+        }
+    ]
+}
