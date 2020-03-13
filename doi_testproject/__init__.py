@@ -2,4 +2,4 @@
 
 __author__ = """Daniel Scheffler"""
 __email__ = 'daniel.scheffler@gfz-potsdam.de'
-__version__ = '0.1.4'
+__version__ = '0.1.5'

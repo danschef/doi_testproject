@@ -25,6 +25,11 @@
             "scheme": "doi",
             "identifier": "10.5281/zenodo.3674046",
             "relation": "isNewVersionOf"
+        },
+        {
+            "scheme": "url",
+            "identifier": "https://doi.org/10.1016/j.rse.2020.111723",
+            "relation": "isCitedBy"
         }
     ]
 }
