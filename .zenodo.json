@@ -18,11 +18,11 @@
     "related_identifiers": [
         {
             "scheme": "url",
-            "identifier": "https://gitext.gfz-potsdam.de/danschef/doi_testproject",
+            "identifier": "https://gitext.gfz-potsdam.de/danschef/doi_testproject"
         },
         {
             "scheme": "doi",
-            "identifier": "10.5281/zenodo.3674046",
+            "identifier": "10.5281/zenodo.3674046"
         }
     ]
 }
