@@ -20,14 +20,10 @@
             "name": "Scheffler, Daniel",
             "affiliation": "Helmholtz Centre Potsdam German Research Centre for Geosciences GFZ, Section 1.4 - Remote Sensing and Geoinformatics",
             "orcid": "0000-0003-4106-8928",
-            "type": [
-                "ContactPerson",
-                "Editor",
-                "Researcher"
-            ]
+            "type": "ContactPerson, Editor, Researcher"
         }
     ],
-    "publication_date": ["2020-03 TO *"],
+    "publication_date": [2020-03 TO *],
     "related_identifiers": [
         {
             "scheme": "url",
