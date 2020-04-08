@@ -3,8 +3,9 @@ before_script:
 
 
 # Advise GitLab that these environment vars should be loaded from the Variables config.
-#variables:
-#    GITHUB_RELEASE_TOKEN: SECURE
+variables:
+    PUBLICVAR: SECURE
+    GITHUB_RELEASE_TOKEN: SECURE
 
 
 stages:
@@ -28,7 +29,7 @@ create_github_release:
 #       # - 'AUTH_HEADER="Authorization: token $GITHUB_RELEASE_TOKEN"'  # quotes avoid YAML syntax error caused by ':'
 #       - echo $GITHUB_RELEASE_TOKEN
 #       # - curl https://api.github.com/repos/danschef/doi_testproject/releases --data "$API_JSON" -H "$AUTH_HEADER"
-        - 'curl https://api.github.com/repos/danschef/doi_testproject/releases --data "$API_JSON" -H "Authorization: token $K8S_SECRET_GITHUB_RELEASE_TOKEN"'
+        - 'curl https://api.github.com/repos/danschef/doi_testproject/releases --data "$API_JSON" -H "Authorization: token $GITHUB_RELEASE_TOKEN"'
     only:
         - /^v\d+\.\d+\.\d+([abc]\d*)?$/  # PEP-440 compliant version (tags)
     except:
