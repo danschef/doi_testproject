@@ -14,6 +14,9 @@ stages:
 create_github_release:
     stage: deploy
     script:
+        - echo $PUBLICVAR
+        - echo $TESTVAR
+        - echo $K8S_SECRET_TESTVAR
         - bash ./.github/make_release.sh
 #       # - API_JSON=$(printf '{"tag_name":"%s",
 #                              "target_commitish":"master",
