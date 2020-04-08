@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-USER=danschef
-REPO=doi_testproject
-URL_RELEASES=https://api.github.com/repos/$USER/$REPO/releases
+URL_RELEASES=https://api.github.com/repos/$GITHUB_USER/$GITHUB_REPONAME/releases
 
 # create the release
 API_JSON=$(printf '{"tag_name":"%s",
