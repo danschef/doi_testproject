@@ -14,7 +14,7 @@ stages:
 create_github_release:
     stage: deploy
     script:
-        - make github_release
+        - bash ./.github/make_release.sh
 #        - API_JSON=$(printf '{"tag_name":"%s",
 #                              "target_commitish":"master",
 #                              "name":"%s",
