@@ -86,3 +86,14 @@ install: clean ## install the package to the active Python's site-packages
 
 gitlab_CI_docker:  ## Build a docker image for CI use within gitlab
 	cd ./tests/CI_docker/; bash ./build_doi_testproject_testsuite_image.sh
+
+github_release:
+	API_JSON=$(printf '{"tag_name":"%s",
+						"target_commitish":"master",
+						"name":"%s",
+						"body":"",
+						"draft":false,
+						"prerelease":false}' \
+						$CI_COMMIT_TAG $CI_COMMIT_TAG)
+	AUTH_HEADER="Authorization: token $GITHUB_RELEASE_TOKEN"
+	curl https://api.github.com/repos/danschef/doi_testproject/releases --data "$API_JSON" -H "$AUTH_HEADER"
