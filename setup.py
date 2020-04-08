@@ -48,6 +48,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/danschef/doi_testproject',
-    version='0.1.38',
+    version='0.1.39',
     zip_safe=False,
 )

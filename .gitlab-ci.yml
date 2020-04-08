@@ -8,10 +8,9 @@ stages:
 
 create_github_release:
     stage: deploy
-    variables:
-        GITHUB_USER: danschef
-        GUTHUB_REPONAME: doi_testproject
     script:
+        - export GITHUB_USER=danschef
+        - export GUTHUB_REPONAME=doi_testproject
         - bash ./.github/make_release.sh
     only:
         - /^v\d+\.\d+\.\d+([abc]\d*)?$/  # PEP-440 compliant version (tags)
