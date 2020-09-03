@@ -9,9 +9,7 @@ stages:
 create_github_release:
     stage: deploy
     script:
-        - export GITHUB_USER=danschef
-        - export GUTHUB_REPONAME=doi_testproject
-        - bash ./.github/make_release.sh
+        - bash ./.github/make_release.sh  # uses environment variables set in the UI
     only:
         - /^v\d+\.\d+\.\d+([abc]\d*)?$/  # PEP-440 compliant version (tags)
     except:
