@@ -21,7 +21,7 @@ doi_testproject
 A Python project to test automatic DOI assignments using Zenodo.
 
 
-* Free software: GNU General Public License v3
+* Free software: GNU General Public License v3 or later (GPLv3+)
 * Documentation: https://doi-testproject.readthedocs.io.
 
 
